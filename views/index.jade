@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 Sip Tools
+  p Welcome to Sip Digest Checker
+  p Input the whole entire sip message into the box and put the username and password into the other boxes.
+  form(action="/sipdigest", method="POST")
+    p sip message
+    textarea(name='sipmsg', cols='50', rows='20')
+    br
+    label username :  
+      input(type='text', name='username')
+    br
+    label password :      
+    input(type='text', name='password')
+    br
+    input(type='submit', value='Submit')
+
+

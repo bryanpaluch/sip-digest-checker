@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 Sip Tools
+  p Welcome to Sip Digest Checker
+  if passed
+    p The Password Checks out, it looks like everything 
+      b is ok
+  else
+    p The password is 
+      b incorrect 
+      make sure the sip message is printed out correctly below
+  p sip message
+  div #{sipmsg}
+  br
+  p username: #{username} 
+  br
+  p password: #{password} 
+  a(href='/')back
+
+
