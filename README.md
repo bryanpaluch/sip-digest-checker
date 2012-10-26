@@ -12,9 +12,12 @@ cd sip-digest-checker
 npm install
 node server.js
 
+```
 runs on port 3000, Point your browser to http://localhost:3000  or your
 servers ip
 
+***Test Case
+```bash
 SIP/2.0 401 Unauthorized
 From:
 <sip:001DCEA4AA69001@ims.cabletown.com>;tag=4642a8-afe8a13-13c4-50029-50897e4e-1f5c90e7-50897e4e
